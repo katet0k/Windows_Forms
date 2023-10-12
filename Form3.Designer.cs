@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form3";
+            dateTimePicker1 = new DateTimePicker();
+            SuspendLayout();
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(263, 195);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 0;
+            dateTimePicker1.ValueChanged += DateTimePicker_ValueChanged;
+            // 
+            // Form3
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dateTimePicker1);
+            Name = "Form3";
+            Text = "Form3";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DateTimePicker dateTimePicker1;
     }
 }
