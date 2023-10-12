@@ -8,13 +8,18 @@ namespace Windows_Forms
         }
         private void button1_MouseDown(object sender, MouseEventArgs e)
         {
-            Form1 secondForm = new Form1();
+            Form2 secondForm = new Form2();
             secondForm.ShowDialog();
         }
         private void button2_MouseDown(object sender, MouseEventArgs e)
         {
-            Form2 secondForm = new Form2();
+            Form3 secondForm = new Form3();
             secondForm.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
